@@ -7,6 +7,8 @@ A base foi retirada da própria documentação do ratchet, implementei algumas o
 
 A ideia do chat é ser utilizado em rede, usando o console do browser (IE não da suporte a Web Socket, nem alguns navegadores antigos, e ainda não mechi para deixar compativel).
 
+Antes de tudo, não se esqueça de rodar o composer no projeto :)
+
 Para configurar o ip da máquina servidor que vai subir a aplicação ao qual os clientes (browsers) devem conectarem-se, altere a seguinte linha do arquivo index.html:
 
 #####var conn = new WebSocket('ws://SeuIp:8080');

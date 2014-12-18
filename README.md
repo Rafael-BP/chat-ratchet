@@ -22,7 +22,5 @@ A porta 8080 é usada para a aplicação php do chat, que deve ser iniciada (al�
 
 É isso ai :D
 
-<div style="text-align:center">
 ![Oh long jhonson power]
 (http://i1.kym-cdn.com/entries/icons/original/000/009/687/safe_image_(1).jpg)
-</div>

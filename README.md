@@ -11,6 +11,8 @@ Para configurar o ip da máquina servidor que vai subir a aplicação ao qual os
 
 #####var conn = new WebSocket('ws://192.168.0.118:8080');
 
-A porta que será usada junto do ip configurado para acessar a aplicação, é a porta configurada quando subir o servidor. A porta 8080 é usada para subir a aplicação de chat, que deve ser iniciada (além de subir o servidor da aplicação) utilizando o comando:
+A porta que será usada junto do ip configurado para acessar a aplicação, é a porta configurada ao subir o servidor.
+
+A porta 8080 é usada para a aplicação php do chat, que deve ser iniciada (além de subir o servidor da aplicação) utilizando o comando:
 
 #####php bin/chat-server.php

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat :)</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div>Abra o console e converse!</div><br/>
+		<div>OBS: Utilizar a seguinte estrutura para enviar mensagens globais no console</div>
+		<b> chat.enviar("sua mensagem"); </b>
+		<div>OBS: Utilizar a seguinte estrutura para enviar mensagens direcionadas no console</div>
+		<b> chat.enviar("sua mensagem", [10, 11]); </b>
+	</body>
+</html>
+
+
+<script>
+var conn = new WebSocket('ws://192.168.0.118:8080');
+var chat = {
+	enviar: function(mensagem, destino) {
+		conn.send( JSON.stringify({
+			destino: destino,
+			mensagem: mensagem
+		}) );
+	}
+};
+console.log(conn);
+conn.onopen = function(e) {
+    console.log("Conexão estabelecida!");
+};
+
+conn.onmessage = function(e) {
+    console.log(e.data);
+};
+</script>

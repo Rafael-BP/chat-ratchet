@@ -16,7 +16,7 @@
 
 
 <script>
-var conn = new WebSocket('ws://192.168.0.118:8080');
+var conn = new WebSocket('ws://localhost:8080');
 var chat = {
 	enviar: function(mensagem, destino) {
 		conn.send( JSON.stringify({
@@ -25,7 +25,6 @@ var chat = {
 		}) );
 	}
 };
-console.log(conn);
 conn.onopen = function(e) {
     console.log("Conexão estabelecida!");
 };

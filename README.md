@@ -18,3 +18,9 @@ A porta que será usada junto do ip configurado para acessar a aplicação, é a
 A porta 8080 é usada para a aplicação php do chat, que deve ser iniciada (além de subir o servidor da aplicação) utilizando o comando:
 
 #####php bin/chat-server.php
+
+
+É isso ai :D
+
+![Oh long jhonson power]
+(http://i1.kym-cdn.com/entries/icons/original/000/009/687/safe_image_(1).jpg)

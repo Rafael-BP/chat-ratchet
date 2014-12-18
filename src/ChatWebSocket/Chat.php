@@ -1,5 +1,5 @@
 <?php
-namespace TesteWebSocket;
+namespace ChatWebSocket;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;

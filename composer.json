@@ -1,7 +1,7 @@
 {
 	"autoload": {
         "psr-0": {
-            "TesteWebSocket": "src"
+            "ChatWebSocket": "src"
         }
     },
     "require": {

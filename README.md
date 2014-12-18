@@ -3,7 +3,7 @@ chat-ratchet
 
 Chat criado usando Ratchet
 
-A base foi retirada da própria documentação do ratchet, implementei algumas outras coisas, em especial a função chat.enviar que aceita parametro do destino (s) a ser enviado, além de algumas customizações.
+A base foi retirada da própria documentação do ratchet, implementei algumas outras coisas, em especial a função chat.enviar que aceita parametro do destino (s) a ser enviada a mensagem, além de algumas customizações.
 
 A ideia do chat é ser utilizado em rede, usando o console do browser (IE não da suporte a Web Socket, nem alguns navegadores antigos, e ainda não mechi para deixar compativel).
 

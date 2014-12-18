@@ -33,16 +33,17 @@ class Chat implements MessageComponentInterface
 			$arrayDestino = json_decode($msg)->destino;
 		}
 		if (!$arrayDestino) {			
-			echo ('Conexão ' . $from->resourceId . ' enviou a mensagem "' . json_decode($msg)->mensagem . '" no modo global.');
+			echo ('Conexão ' . $from->resourceId . ' enviou a mensagem "' . json_decode($msg)->mensagem . '" no modo global.\n');
 		}
 		foreach ($this->clients as $client) {
 			if ($arrayDestino) {
 				if (in_array($client->resourceId, $arrayDestino)) {
-					$client->send(json_decode($msg)->mensagem);
+					$client->send(json_decode($msg)->mensagem . "\n");
+					echo ('Conexão ' . $from->resourceId . ' enviou a mensagem "' . json_decode($msg)->mensagem . '" para ' . $client->resourceId . '.\n');
 				}
 			}
 			else if ($from !== $client) {
-				$client->send(json_decode($msg)->mensagem);
+				$client->send(json_decode($msg)->mensagem . "\n");
 			}
 		}
 	}

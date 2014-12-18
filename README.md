@@ -9,7 +9,7 @@ A ideia do chat é ser utilizado em rede, usando o console do browser (IE não d
 
 Para configurar o ip da máquina servidor que vai subir a aplicação ao qual os clientes (browsers) devem conectarem-se, altere a seguinte linha do arquivo index.html:
 
-#####var conn = new WebSocket('ws://192.168.0.118:8080');
+#####var conn = new WebSocket('ws://aquivaiseuip:8080');
 
 A porta que será usada junto do ip configurado para acessar a aplicação, é a porta configurada ao subir o servidor.
 
